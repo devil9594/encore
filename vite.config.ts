@@ -5,9 +5,21 @@ import path from "path";
 export default defineConfig({
   base: "/encore/",
   plugins: [react()],
+  server: {
+    host: true,
+    port: 8080,
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    outDir: "dist",
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
     },
   },
 });

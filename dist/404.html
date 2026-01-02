@@ -3,23 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Company Name – Professional Services</title>
-    <meta
-      name="description"
-      content="Company Name provides professional services with excellence."
-    />
-    <meta name="author" content="Company Name" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/encore/favicon.ico" />
-    <script type="module" crossorigin src="/encore/assets/index-CjNpI1CT.js"></script>
-    <link rel="stylesheet" crossorigin href="/encore/assets/index-CXH26n7d.css">
+    <title>Company Name - Professional Services</title>
+    <script>
+      // SPA redirect for GitHub Pages
+      sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
+      location.replace('./');
+    </script>
   </head>
-
   <body>
-    <div id="root"></div>
-
-    <!-- ❗ DO NOT change this -->
+    <noscript>JavaScript is required.</noscript>
   </body>
 </html>
